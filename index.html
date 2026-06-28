@@ -1,0 +1,1563 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <script src="/_sdk/telemetry_sdk.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Thermal Inovasi Teknik</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00b4d8',
+                        secondary: '#e8f4f8',
+                        accent: '#0096c7',
+                        bg: '#f0f8fc',
+                        cta: '#FFB000'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+</head>
+
+<body data-template-id="__page-root" class="min-h-screen overflow-x-hidden"
+    style="background: #f0f8fc; color: #1a2332;">
+
+    <!-- =========================================
+         NAVIGATION
+         ========================================= -->
+    <nav class="fixed top-0 left-0 right-0 z-50"
+        style="background:#ffffff; border-bottom:1px solid rgba(0,180,216,0.2); box-shadow: 0 2px 12px rgba(0,180,216,0.08);">
+        <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-3">
+                <img src="img/logo_mark.png?v=2" alt="PT. Thermal Inovasi Teknik Logo"
+                    class="h-9 w-auto object-contain">
+                <img src="img/logo_text.png?v=1" alt="PT. Thermal Inovasi Teknik" class="h-5 w-auto object-contain">
+            </a>
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-7 text-sm">
+                <a href="#home" class="nav-link font-semibold" style="color:#00b4d8;">Home</a>
+                <a href="#about" class="nav-link hover:text-primary" style="color:#4a6280;">About Us</a>
+                <a href="#services" class="nav-link hover:text-primary" style="color:#4a6280;">Services</a>
+                <a href="#projects" class="nav-link hover:text-primary" style="color:#4a6280;">Projects</a>
+                <a href="#contact" class="nav-link hover:text-primary" style="color:#4a6280;">Contact</a>
+                <a href="#quotation" class="btn-cta px-4 py-2 rounded-lg font-bold text-xs uppercase"
+                    style="background: linear-gradient(135deg, #FFB000 0%, #E09E00 100%); color: #1a2332; box-shadow: 0 2px 8px rgba(255,176,0,0.3);">
+                    GET ESTIMATE
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 text-sm" style="background:#fff;">
+            <a href="#home" class="block py-2 font-semibold" style="color:#00b4d8;">Home</a>
+            <a href="#about" class="block py-2" style="color:#4a6280;">About Us</a>
+            <a href="#services" class="block py-2" style="color:#4a6280;">Services</a>
+            <a href="#projects" class="block py-2" style="color:#4a6280;">Projects</a>
+            <a href="#contact" class="block py-2" style="color:#4a6280;">Contact</a>
+            <a href="#quotation" class="block py-2 text-cta font-semibold">Request Quotation</a>
+        </div>
+    </nav>
+
+    <!-- =========================================
+         HOME / HERO SECTION
+         ========================================= -->
+    <section id="home" class="relative pt-14 pb-6 px-6" style="background:#f0f8fc;">
+        <!-- 1. Hero Block -->
+        <div class="max-w-7xl mx-auto w-full min-h-[280px] flex items-center pt-4 pb-2">
+            <!-- Hero Container Card -->
+            <div class="rounded-3xl overflow-hidden grid md:grid-cols-12 items-stretch w-full md:h-[450px]"
+                style="background: linear-gradient(135deg, #e8f4f8 0%, #d0ecf5 100%); border: 1.5px solid rgba(0,180,216,0.3); box-shadow: 0 4px 20px rgba(0,180,216,0.06);">
+
+                <!-- Left: Content -->
+                <div class="md:col-span-7 p-6 md:p-12 flex flex-col justify-center">
+                    <!-- Headline -->
+                    <h1 class="font-extrabold leading-tight mb-3 tracking-tight"
+                        style="font-size: clamp(20px, 2.5vw, 26px); color: #1a2332; font-family: 'DM Sans', sans-serif;">
+                        SOLUSI TERINTEGRASI UNTUK CLEANROOM & HVAC INDUSTRI
+                    </h1>
+                    <!-- Subheadline -->
+                    <p class="text-xs md:text-sm mb-4 leading-relaxed font-medium"
+                        style="color: #4a6280; max-width: 450px;">
+                        Inovasi Teknik Presisi dari Tahun 2023. Memenuhi Standar CPOB, GMP, dan Permenkes untuk Ruanf
+                        Steril Anda.
+                    </p>
+                    <!-- CTA Button -->
+                    <div>
+                        <a href="#services" id="hero-cta-btn"
+                            class="inline-block px-6 py-2.5 rounded-lg font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:scale-105 hover:shadow-md"
+                            style="background: #00E5FF; border: none; color: #1a2332; box-shadow: 0 4px 14px rgba(0,229,255,0.4);">
+                            DISCOVER YOUR SOLUTION
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Image Slideshow Carousel -->
+                <div class="md:col-span-5 relative min-h-[180px] md:min-h-full overflow-hidden" id="hero-slideshow">
+                    <div class="flex h-full w-[700%] transition-transform duration-500 ease-in-out"
+                        id="hero-slide-track">
+                        <div class="w-[14.2857%] h-full shrink-0">
+                            <img class="w-full h-full object-cover" src="img/hvac_technicians_hero.png" alt="Slide 1"
+                                loading="lazy">
+                        </div>
+                        <div class="w-[14.2857%] h-full shrink-0">
+                            <img class="w-full h-full object-cover" src="img/hero_slide1.jpg" alt="Slide 2"
+                                loading="lazy">
+                        </div>
+                        <div class="w-[14.2857%] h-full shrink-0">
+                            <img class="w-full h-full object-cover" src="img/hero_slide2.jpg" alt="Slide 3"
+                                loading="lazy">
+                        </div>
+                        <div class="w-[14.2857%] h-full shrink-0">
+                            <img class="w-full h-full object-cover" src="img/hero_slide3.jpg" alt="Slide 4"
+                                loading="lazy">
+                        </div>
+                        <div class="w-[14.2857%] h-full shrink-0">
+                            <img class="w-full h-full object-cover" src="img/hero_slide4.jpg" alt="Slide 5"
+                                loading="lazy">
+                        </div>
+                        <div class="w-[14.2857%] h-full shrink-0">
+                            <img class="w-full h-full object-cover" src="img/hero_slide5.jpg" alt="Slide 6"
+                                loading="lazy">
+                        </div>
+                        <div class="w-[14.2857%] h-full shrink-0">
+                            <img class="w-full h-full object-cover" src="img/hero_slide6.jpg" alt="Slide 7"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Navigation Arrows -->
+                    <button id="hero-prev-btn"
+                        class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full flex items-center justify-center bg-white/40 backdrop-blur-sm hover:bg-white/70 text-gray-800 transition-all z-10 border border-white/20">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+                    <button id="hero-next-btn"
+                        class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full flex items-center justify-center bg-white/40 backdrop-blur-sm hover:bg-white/70 text-gray-800 transition-all z-10 border border-white/20">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Services Block -->
+        <!-- 2. Services Block -->
+        <div id="services" class="max-w-7xl mx-auto pt-4 pb-8 scroll-mt-20">
+
+            <!-- Title Area -->
+            <div class="mb-8">
+                <h2 class="font-extrabold text-left tracking-tight uppercase"
+                    style="color: #1a2332; font-family: 'DM Sans', sans-serif; font-size: 24px;">
+                    LAYANAN &amp; PRODUK (Core Services)
+                </h2>
+                <h3 class="font-bold text-left mt-1.5"
+                    style="color: #00b4d8; font-family: 'DM Sans', sans-serif; font-size: 16px;">
+                    Solusi Terintegrasi Tata Udara &amp; Ruang Steril Skala Industri
+                </h3>
+                <p class="text-xs mt-2 font-medium leading-relaxed" style="color: #4a6280; max-width: 800px;">
+                    Seluruh layanan bersifat customized, mulai dari pengadaan, instalasi, hingga kontrak pemeliharaan
+                    (maintenance) sesuai kebutuhan spesifik Anda.
+                </p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1: Sistem HVAC Commercial -->
+                <div class="group flex flex-col rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02] border hover:border-[#00e5ff] hover:shadow-[0_4px_15px_rgba(0,229,255,0.12)]"
+                    style="background: linear-gradient(180deg, #e8f4f8 0%, #ffffff 100%); border-color: #00e5ff; box-shadow: 0 4px 15px rgba(0, 229, 255, 0.12); min-height: 340px;">
+                    <!-- Isometric Image -->
+                    <div class="flex-1 flex items-center justify-center py-2 mb-3">
+                        <img src="img/svc_hvac.png?v=2" alt="Sistem HVAC Commercial"
+                            class="max-h-36 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <!-- Text Area -->
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-xs uppercase tracking-wide mb-1.5 leading-snug"
+                            style="color: #1a2332;">
+                            Sistem HVAC Commercial
+                        </h4>
+                        <p class="text-[10px] leading-relaxed" style="color: #4a6280;">
+                            Pengadaan, instalasi, dan perawatan AC skala makro, sistem distribusi udara, serta kontrol
+                            kelembaban udara.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Hospital HVAC System -->
+                <div class="group flex flex-col rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02] border hover:border-[#00e5ff] hover:shadow-[0_4px_15px_rgba(0,229,255,0.12)]"
+                    style="background: linear-gradient(180deg, #e8f4f8 0%, #ffffff 100%); border-color: rgba(0,180,216,0.25); min-height: 340px;">
+                    <!-- Isometric Image -->
+                    <div class="flex-1 flex items-center justify-center py-2 mb-3">
+                        <img src="img/svc_hospital.png?v=2" alt="Hospital HVAC System"
+                            class="max-h-36 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <!-- Text Area -->
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-xs uppercase tracking-wide mb-1.5 leading-snug"
+                            style="color: #1a2332;">
+                            Hospital HVAC System
+                        </h4>
+                        <p class="text-[10px] leading-relaxed" style="color: #4a6280;">
+                            Spesialisasi ruang bedah terintegrasi (Modular Operating Theatre/MOT), ruang Cathlab, CT
+                            Scan, Citotoxic, dan Laboratorium BSL (Bio Safety Level).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Industrial Clean Room (Pharmaceutical & Food Beverages) -->
+                <div class="group flex flex-col rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02] border hover:border-[#00e5ff] hover:shadow-[0_4px_15px_rgba(0,229,255,0.12)]"
+                    style="background: linear-gradient(180deg, #e8f4f8 0%, #ffffff 100%); border-color: rgba(0,180,216,0.25); min-height: 340px;">
+                    <!-- Isometric Image -->
+                    <div class="flex-1 flex items-center justify-center py-2 mb-3">
+                        <img src="img/svc_cleanroom.png?v=2"
+                            alt="Industrial Clean Room (Pharmaceutical & Food Beverages)"
+                            class="max-h-36 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <!-- Text Area -->
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-xs uppercase tracking-wide mb-1.5 leading-snug"
+                            style="color: #1a2332;">
+                            Industrial Clean Room<br><span class="text-[9px] normal-case opacity-80"
+                                style="color: #4a6280;">(Pharmaceutical &amp; Food Beverages)</span>
+                        </h4>
+                        <p class="text-[10px] leading-relaxed" style="color: #4a6280;">
+                            Pembangunan ruang steril produksi untuk industri obat-obatan (kualifikasi CPOB/GMP) serta
+                            laboratorium mikrobiologi makanan/minuman.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4: HVAC Automatic Control -->
+                <div class="group flex flex-col rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02] border hover:border-[#00e5ff] hover:shadow-[0_4px_15px_rgba(0,229,255,0.12)]"
+                    style="background: linear-gradient(180deg, #e8f4f8 0%, #ffffff 100%); border-color: rgba(0,180,216,0.25); min-height: 340px;">
+                    <!-- Isometric Image -->
+                    <div class="flex-1 flex items-center justify-center py-2 mb-3">
+                        <img src="img/svc_control.png?v=2" alt="HVAC Automatic Control"
+                            class="max-h-36 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <!-- Text Area -->
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-xs uppercase tracking-wide mb-1.5 leading-snug"
+                            style="color: #1a2332;">
+                            HVAC Automatic Control
+                        </h4>
+                        <p class="text-[10px] leading-relaxed" style="color: #4a6280;">
+                            Pengadaan panel kontrol otomatis (Automation Controller), instalasi ME, serta pelapisan
+                            lantai berupa Vinyl anti-static dan Epoxy lantai industrial.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Secondary Buttons -->
+            <div class="mt-6 flex flex-wrap justify-center gap-4">
+                <a href="#quotation" data-template-id="svc-cta-1"
+                    class="canva-button px-6 py-2.5 rounded-lg font-bold text-xs uppercase tracking-wider btn-cta inline-block"
+                    style="background: rgb(255, 176, 0); color: rgb(26, 35, 50);">
+                    Download Company Profile PDF
+                </a>
+                <a href="#contact" data-template-id="svc-cta-2"
+                    class="canva-button px-6 py-2.5 rounded-lg font-bold text-xs uppercase tracking-wider btn-primary border inline-block"
+                    style="color: rgb(0, 180, 216); border-color: rgba(0,180,216,0.5);">
+                    Konsultasikan Kebutuhan Anda
+                </a>
+            </div>
+        </div>
+
+        <!-- 3. Pengalaman Proyek Terbaru & CTA Block -->
+        <div class="max-w-7xl mx-auto pt-6 pb-6">
+            <!-- Pengalaman Proyek Terbaru -->
+            <div class="pb-8">
+                <h2 class="font-extrabold text-left mb-4 tracking-tight uppercase"
+                    style="color: #1a2332; font-family: 'DM Sans', sans-serif; font-size: 20px;">
+                    Pengalaman Proyek Terbaru
+                </h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <!-- Project 1 -->
+                    <div class="rounded-xl overflow-hidden card-hover"
+                        style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                        <div class="relative h-24 overflow-hidden">
+                            <img class="w-full h-full object-cover"
+                                src="https://images.pexels.com/photos/7108115/pexels-photo-7108115.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="RSUD Saras Adyatma" loading="lazy">
+                            <span class="absolute top-2 left-2 text-[10px] font-bold px-1.5 py-0.5 rounded"
+                                style="background:rgba(255,255,255,0.9); color:#00b4d8; border:1px solid rgba(0,180,216,0.3);">Hospital
+                                (MOT)</span>
+                        </div>
+                        <div class="p-2">
+                            <h4 class="font-bold text-xs" style="color:#1a2332;">RSUD Saras Adyatma Yogyakarta</h4>
+                            <p class="text-[10px] mt-0.5" style="color:#6b8aa8;">Instalasi Cleanroom MOT Kamar</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="rounded-xl overflow-hidden card-hover"
+                        style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                        <div class="relative h-24 overflow-hidden">
+                            <img class="w-full h-full object-cover"
+                                src="https://images.pexels.com/photos/37650270/pexels-photo-37650270.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Pharmaceutical Sterile Production" loading="lazy">
+                            <span class="absolute top-2 left-2 text-[10px] font-bold px-1.5 py-0.5 rounded"
+                                style="background:rgba(255,255,255,0.9); color:#00b4d8; border:1px solid rgba(0,180,216,0.3);">Farmasi</span>
+                        </div>
+                        <div class="p-2">
+                            <h4 class="font-bold text-xs" style="color:#1a2332;">Pharmaceutical Sterile Production Line
+                            </h4>
+                            <p class="text-[10px] mt-0.5" style="color:#6b8aa8;">Instalasi cleanroom produksi steril</p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="rounded-xl overflow-hidden card-hover"
+                        style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                        <div class="relative h-24 overflow-hidden">
+                            <img class="w-full h-full object-cover"
+                                src="https://images.pexels.com/photos/5953714/pexels-photo-5953714.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="PT Papandayan Cocoa" loading="lazy">
+                            <span class="absolute top-2 left-2 text-[10px] font-bold px-1.5 py-0.5 rounded"
+                                style="background:rgba(255,255,255,0.9); color:#00b4d8; border:1px solid rgba(0,180,216,0.3);">Farmasi</span>
+                        </div>
+                        <div class="p-2">
+                            <h4 class="font-bold text-xs" style="color:#1a2332;">PT Papandayan Cocoa Indonesia</h4>
+                            <p class="text-[10px] mt-0.5" style="color:#6b8aa8;">Pembangunan Cleanroom Lab.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="border-t border-primary/20 pt-6">
+                <h2 class="font-extrabold text-left mb-4 tracking-tight uppercase"
+                    style="color: #1a2332; font-family: 'DM Sans', sans-serif; font-size: 20px;">
+                    Call to Action
+                </h2>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects"
+                        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-xs btn-primary"
+                        style="background:#ffffff; border:2px solid #00b4d8; color:#00b4d8;">
+                        Kunjungi Portofolio Lengkap
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                    <a href="#quotation"
+                        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-xs btn-cta"
+                        style="background:#FFB000; color:#1a2332;">
+                        Mulai Request Penawaran (B2B Quotation)
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ABOUT US
+         ========================================= -->
+    <section id="about" class="relative pt-10" style="background:#f0f8fc;">
+        <div class="max-w-5xl mx-auto px-6 pt-4 pb-12">
+
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-2 text-xs mb-8" style="color:#6b8aa8;">
+                <span class="hover:text-primary cursor-pointer" style="color:#6b8aa8;">Home</span>
+                <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                <span style="color:#1a2332; font-weight:600;">About Us</span>
+            </div>
+
+            <!-- =====================
+                 PROFIL PERUSAHAAN
+                 ===================== -->
+            <div class="grid md:grid-cols-2 gap-10 mb-12 items-start">
+                <!-- Left: Text -->
+                <div>
+                    <h2 class="font-extrabold mb-5 leading-tight"
+                        style="color:#1a2332; font-size:clamp(20px,3.5vw,30px);">
+                        PROFIL PERUSAHAAN<br>
+                        <span style="color:#00b4d8;">(CORPORATE PROFILE)</span>
+                    </h2>
+                    <p class="text-sm leading-relaxed" style="color:#4a6280; max-width:440px;">
+                        PT Thermal Inovasi Teknik merupakan perusahaan penyedia solusi HVAC, Cleanroom, Coldroom, Drying
+                        Room, serta sistem automasi industri yang berdiri sejak tahun 2023. Dengan pengalaman di sektor
+                        farmasi, food & beverage, rumah sakit, dan berbagai industri lainnya, kami menyediakan layanan
+                        pengadaan, instalasi, dan pembangunan infrastruktur industri yang mengutamakan kualitas,
+                        kepatuhan standar, dan solusi yang sesuai kebutuhan pelanggan.
+                    </p>
+                </div>
+                <!-- Right: Photo -->
+                <div class="rounded-xl overflow-hidden" style="height:250px;">
+                    <img class="w-full h-full object-cover"
+                        src="https://images.pexels.com/photos/5118462/pexels-photo-5118462.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Workers in cleanroom suits inspecting facility" loading="lazy">
+                </div>
+            </div>
+
+            <!-- =====================
+                 VISI & MISI
+                 ===================== -->
+            <h2 class="font-extrabold mb-6" style="color:#1a2332; font-size:clamp(18px,3vw,26px);">
+                VISI &amp; MISI
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+
+                <!-- Visi Card -->
+                <div class="rounded-xl p-6 text-center"
+                    style="background:#ffffff; border:1.5px solid rgba(0,180,216,0.3); box-shadow:0 2px 12px rgba(0,180,216,0.08);">
+                    <h3 class="font-bold mb-5 tracking-wider text-sm" style="color:#1a2332;">
+                        VISI <span style="color:#00b4d8;">(VISION)</span>
+                    </h3>
+                    <!-- Globe icon -->
+                    <div class="w-16 h-16 mx-auto mb-5 rounded-full flex items-center justify-center"
+                        style="background:rgba(0,180,216,0.1); border:1.5px solid rgba(0,180,216,0.3);">
+                        <i data-lucide="globe" class="w-8 h-8" style="color:#00b4d8;"></i>
+                    </div>
+                    <p class="text-sm leading-relaxed" style="color:#4a6280;">
+                        Menjadi perusahaan terdepan dibidang penyedia barang dan jasa instalasi HVAC System, Cleanroom,
+                        Coldroom, Dryingroom, Mechanical Electrical & Flooring yang terus berkembang secara
+                        berkesinambungan dengan komitmen tinggi dan konsep tata kelola perusahaan yang baik, sejalan
+                        dengan perkembangan teknologi di era globalisasi serta mampu berkontribusi dalam pembangunan
+                        sumberdaya manusia, bangsa dan negara
+                    </p>
+                </div>
+
+                <!-- Misi Card -->
+                <div class="rounded-xl p-6"
+                    style="background:#ffffff; border:1.5px solid rgba(0,180,216,0.3); box-shadow:0 2px 12px rgba(0,180,216,0.08);">
+                    <h3 class="font-bold mb-5 tracking-wider text-sm text-center" style="color:#1a2332;">
+                        MISI <span style="color:#00b4d8;">(MISSION)</span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-sm" style="color:#4a6280;">
+                            <i data-lucide="check-circle" class="w-5 h-5 shrink-0 mt-0.5" style="color:#00b4d8;"></i>
+                            Menyelaraskan presepsi antara management & karyawan untuk mempertahankan nilai-nilai
+                            perusahaan dalam mencapai tujuan bersama.
+
+                        </li>
+                        <li class="flex items-start gap-3 text-sm" style="color:#4a6280;">
+                            <i data-lucide="check-circle" class="w-5 h-5 shrink-0 mt-0.5" style="color:#00b4d8;"></i>
+                            Pelatihan SDM yang tepat untuk menghasilan tenaga kerja yang berdedikasi tinggi dan
+                            kompeten.
+
+                        </li>
+                        <li class="flex items-start gap-3 text-sm" style="color:#4a6280;">
+                            <i data-lucide="check-circle" class="w-5 h-5 shrink-0 mt-0.5" style="color:#00b4d8;"></i>
+                            Pemberdayaan dalam seluruh aspek management.
+
+                        </li>
+                        <li class="flex items-start gap-3 text-sm" style="color:#4a6280;">
+                            <i data-lucide="check-circle" class="w-5 h-5 shrink-0 mt-0.5" style="color:#00b4d8;"></i>
+                            Peningkatan relasi dan kompetisi di era globalisasi melalui kerjasama dengan berbagai
+                            perusahaan.
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- =====================
+                 KOMITMEN KAMI & MENGAPA HARUS KAMI
+                 ===================== -->
+            <div class="mb-12">
+                <!-- Komitmen Kami Banner -->
+                <div
+                    class="inline-block bg-primary text-white font-bold px-6 py-2 rounded-r-xl relative -left-6 mb-6 uppercase tracking-wider text-xs shadow-md">
+                    KOMITMEN KAMI
+                </div>
+                <div class="rounded-2xl p-6 bg-white border border-primary/20 shadow-sm space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5 text-primary">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            Sesuai Visi dan Misi Perusahaan, kami berkomitmen tinggi terhadap bidang kerja kami untuk
+                            bisa berkontribusi pada kemajuan bangsa. Didukung kestabilan manajemen perusahaan, SDM yang
+                            kompeten dan tenaga ahli serta terampil, maka kami bisa mewujudkan infrastruktur di industri
+                            yang telah Anda rencanakan.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5 text-primary">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            Dalam setiap proyek, kami menjamin kepatuhan terhadap peraturan seperti Permenkes yang
+                            mengatur persyaratan ruangan khusus, mengikuti persyaratan sesuai dengan kebutuhan klien,
+                            mematuhi peraturan GMP (Good Manufacturing Practice) dan CPOB (Cara Pembuatan Obat yang
+                            Baik). Serta terus mengembangkan wawasan & pengetahuan demi meningkatkan kreativitas,
+                            ketepatan, dan kecepatan kinerja kami untuk memenuhi setiap kebutuhan klien.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5 text-primary">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            Komitmen kami divisualkan dalam bentuk karya nyata dari perusahaan ini, di mana dalam waktu
+                            singkat kami telah mampu berkontribusi terhadap kemajuan bisnis dari beberapa
+                            perusahaan/industri di Indonesia dan akan terus bertambah, hal ini tertuang dalam pengalaman
+                            kerja kami.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <!-- Mengapa Harus Kami Banner -->
+                <div
+                    class="inline-block bg-primary text-white font-bold px-6 py-2 rounded-r-xl relative -left-6 mb-6 uppercase tracking-wider text-xs shadow-md">
+                    MENGAPA HARUS KAMI?
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Management Perusahaan -->
+                    <div class="rounded-2xl p-6 bg-white border border-primary/20 shadow-sm flex flex-col">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-gray-800 uppercase tracking-wide">Management Perusahaan
+                            </h3>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-gray-600 flex-1">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                                <span>Pengelolaan Management Perusahaan yang baik.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                                <span>SDM yang Kompeten & Terampil.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                                <span>Dukungan dari mitra kerja dan tenaga ahli.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Pengalaman Kerja -->
+                    <div class="rounded-2xl p-6 bg-white border border-primary/20 shadow-sm flex flex-col">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent">
+                                <i data-lucide="briefcase" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-gray-800 uppercase tracking-wide">Pengalaman Kerja</h3>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-gray-600 flex-1">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-accent shrink-0 mt-0.5"></i>
+                                <span>Mampu mewujudkan infrastruktur skala industri.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-accent shrink-0 mt-0.5"></i>
+                                <span>Lingkup operasional kerja nasional.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kemampuan Teknik -->
+                    <div class="rounded-2xl p-6 bg-white border border-primary/20 shadow-sm flex flex-col">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-cta/10 flex items-center justify-center text-cta">
+                                <i data-lucide="wrench" class="w-5 h-5 text-cta"></i>
+                            </div>
+                            <h3 class="font-bold text-sm text-gray-800 uppercase tracking-wide">Kemampuan Teknik</h3>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-gray-600 flex-1">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-cta shrink-0 mt-0.5"></i>
+                                <span>Terampil & telah teruji.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-cta shrink-0 mt-0.5"></i>
+                                <span>Mampu memberikan solusi terbaik dalam mencapai tujuan.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check" class="w-4 h-4 text-cta shrink-0 mt-0.5"></i>
+                                <span>Fleksibel dalam pengerjaan dan mampu menyesuaikan dengan kebutuhan yang
+                                    diinginkan.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- (Core Services section has been moved to home section above) -->
+
+    <!-- =========================================
+         PROJECTS PORTFOLIO
+         ========================================= -->
+    <section id="projects" class="py-20 px-4" style="background:#f0f8fc;">
+        <div class="max-w-7xl mx-auto">
+            <h2 data-template-id="projects-title" class="canva-text font-bold text-center mb-8"
+                style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 24px;">Portofolio
+                Proyek</h2>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12">
+                <div class="text-center glass glow rounded-2xl p-4">
+                    <div class="text-3xl font-bold glow-text-primary" style="color:#00b4d8;">50+</div>
+                    <div class="text-xs mt-1" style="color:#6b8aa8;">Proyek Selesai</div>
+                </div>
+                <div class="text-center glass glow rounded-2xl p-4">
+                    <div class="text-3xl font-bold glow-text-accent" style="color:#0096c7;">30+</div>
+                    <div class="text-xs mt-1" style="color:#6b8aa8;">Mitra Korporasi</div>
+                </div>
+                <div class="text-center glass glow rounded-2xl p-4">
+                    <div class="text-3xl font-bold text-cta glow-text-cta">100%</div>
+                    <div class="text-xs mt-1" style="color:#6b8aa8;">Kepatuhan Standar</div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10" id="project-filters">
+                <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold"
+                    style="background:#00b4d8; color:#fff;" data-filter="all">Semua</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold"
+                    style="background:#e8f4f8; color:#4a6280;" data-filter="hospital">Hospital</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold"
+                    style="background:#e8f4f8; color:#4a6280;" data-filter="pharmaceutical">Pharmaceutical</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold"
+                    style="background:#e8f4f8; color:#4a6280;" data-filter="food">Food &amp; Beverage</button>
+                <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold"
+                    style="background:#e8f4f8; color:#4a6280;" data-filter="industrial">Industrial &amp;
+                    Electronics</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid md:grid-cols-3 gap-6" id="project-grid">
+                <!-- PT. New Optics Indonesia -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-newoptics-img"
+                        class="canva-image w-full h-40 object-contain bg-white p-4" loading="lazy"
+                        src="img/client_newoptics.jpg" alt="PT. New Optics Indonesia Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-newoptics-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT. New Optics Indonesia</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2024 · Cikarang</p>
+                    </div>
+                </div>
+
+                <!-- PT Ytech Samsung -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-ytech-img" class="canva-image w-full h-40 object-cover" loading="lazy"
+                        src="img/client_ytech.jpg" alt="PT Ytech Samsung Building">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-ytech-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Ytech Samsung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi </p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2024 · Cikarang</p>
+                    </div>
+                </div>
+
+                <!-- PT Solas Langgeng Sejahtera -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="pharmaceutical"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-solas-img" class="canva-image w-full h-40 object-contain bg-white p-4"
+                        loading="lazy" src="img/client_solas.jpg" alt="PT Solas Langgeng Sejahtera Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Pharmaceutical</span>
+                        <h4 data-template-id="proj-solas-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Solas Langgeng Sejahtera</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2024 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- PT Compotec Internasional -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-compotec-img"
+                        class="canva-image w-full h-40 object-contain bg-white p-4" loading="lazy"
+                        src="img/client_compotec.jpg" alt="PT Compotec Internasional Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-compotec-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Compotec Internasional</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2024 · Sentul</p>
+                    </div>
+                </div>
+
+                <!-- PT Papandayan Cocoa Indonesia -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="food"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-papandayan-img"
+                        class="canva-image w-full h-40 object-contain bg-white p-4" loading="lazy"
+                        src="img/client_papandayan.jpg" alt="Barry Callebaut / PT Papandayan Cocoa Indonesia Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Food &amp; Beverage</span>
+                        <h4 data-template-id="proj-papandayan-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Papandayan Cocoa Indonesia</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Lab. Micro Biologi </p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2023 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- PT Djojonegoro C-1000 -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="food"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-djojonegoro-img"
+                        class="canva-image w-full h-40 object-contain bg-white p-4" loading="lazy"
+                        src="img/client_youc1000.jpg" alt="PT Djojonegoro C-1000 Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Food &amp; Beverage</span>
+                        <h4 data-template-id="proj-djojonegoro-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Djojonegoro C-1000</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Laboratorium</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2024 · Sukabumi</p>
+                    </div>
+                </div>
+
+                <!-- RSUD Saras Adyatma -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-saras-img" class="canva-image w-full h-40 object-contain bg-white p-4"
+                        loading="lazy" src="img/client_saras.jpg" alt="RSUD Saras Adyatma Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-saras-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSUD Saras Adyatma</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom MOT / Kamar Operasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2024 · Bantul Yogyakarta</p>
+                    </div>
+                </div>
+
+                <!-- RS Al Islam Bandung -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-alislam-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_alislam.png" alt="RS Al Islam Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-alislam-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Al Islam Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Operasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2017 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RS Mitra Kasih Bandung -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-mitrakasih-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_mitrakasih.png" alt="RS Mitra Kasih Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-mitrakasih-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Mitra Kasih Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Operasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2018 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RS Baros Cimahi -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-baros-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_baros.png" alt="RS Baros Cimahi Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-baros-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Baros Cimahi</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Operasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2018 · Cimahi</p>
+                    </div>
+                </div>
+
+                <!-- RSP Rotinsulu Bandung - Laboratorium Mix Obat -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-rotinsulu-mix-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_rotinsulu.png" alt="RSP Rotinsulu Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-rotinsulu-mix-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSP Rotinsulu Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium Mix Obat</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2019 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RS Rotinsulu Bandung - Ruang Isolasi MDR -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-rotinsulu-isolasi-img"
+                        class="canva-image w-full h-40 object-contain p-4" loading="lazy" src="img/client_rotinsulu.png"
+                        alt="RS Rotinsulu Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-rotinsulu-isolasi-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Rotinsulu Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Isolasi MDR</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2019 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- PT. Golden Harvest Cocoa Tangerang -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="food"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-goldenharvest-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_goldenharvest.png" alt="PT. Golden Harvest Cocoa Indonesia Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Food &amp; Beverage</span>
+                        <h4 data-template-id="proj-goldenharvest-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT. Golden Harvest Cocoa Indonesia</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">INSTALASI HVAC CLEANROOM </p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2019 · Tangerang</p>
+                    </div>
+                </div>
+
+                <!-- RSUD Al Ihsan Bandung -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-alihsan-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_alihsan.png" alt="RSUD Al Ihsan Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-alihsan-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSUD Al Ihsan Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium BSL-2 Covid</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2020 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- PT. Mitra Rajawali Banjaran -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-mitrarajawali-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_mitrarajawali.png" alt="PT. Mitra Rajawali Banjaran Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-mitrarajawali-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT. Mitra Rajawali Banjaran</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2020 · Banjaran</p>
+                    </div>
+                </div>
+
+                <!-- PT. Unilever Indonesia -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-unilever-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_unilever.png" alt="PT. Unilever Indonesia Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-unilever-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT. Unilever Indonesia</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2020 · Cikarang</p>
+                    </div>
+                </div>
+
+                <!-- RS Anna Bekasi -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-rsanna-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_rsanna.png" alt="RS Anna Bekasi Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-rsanna-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Anna Bekasi</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2020 · Bekasi</p>
+                    </div>
+                </div>
+
+                <!-- RSUD Demang Sepulau Raya -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-demang-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_demang.png" alt="RSUD Demang Sepulau Raya Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-demang-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSUD Demang Sepulau Raya</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Isolasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2020 · Lampung</p>
+                    </div>
+                </div>
+
+                <!-- RSP Rotinsulu Bandung - Ruang Steril CSSD -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-rotinsulu-cssd-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_rotinsulu.png" alt="RSP Rotinsulu Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-rotinsulu-cssd-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSP Rotinsulu Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Steril CSSD</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2021 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RSUD Sumedang - BSL-2 Covid -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-sumedang-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_sumedang.png" alt="RSUD Sumedang Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-sumedang-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSUD Sumedang</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium BSL-2 Covid</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2021 · Sumedang</p>
+                    </div>
+                </div>
+
+                <!-- PT Yamazaki Indonesia - Clean Room -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="food"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-yamazaki-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_yamazaki.png" alt="PT Yamazaki Indonesia Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Food &amp; Beverage</span>
+                        <h4 data-template-id="proj-yamazaki-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Yamazaki Indonesia</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2021 · Cikarang</p>
+                    </div>
+                </div>
+
+                <!-- BPOM Bandung - Laboratorium -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="pharmaceutical"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-bpom-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_bpom.png" alt="BPOM Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Pharmaceutical</span>
+                        <h4 data-template-id="proj-bpom-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            BPOM Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2022 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RS Al Islam Bandung - Laboratorium Admixture Obat -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-alislam-admixture-img"
+                        class="canva-image w-full h-40 object-contain p-4" loading="lazy" src="img/client_alislam.png"
+                        alt="RS Al Islam Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-alislam-admixture-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Al Islam Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium Admixture Obat</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2022 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RSP Rotinsulu Bandung - Ruang ICU -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-rotinsulu-icu-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_rotinsulu.png" alt="RSP Rotinsulu Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-rotinsulu-icu-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSP Rotinsulu Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang ICU</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2022 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RS Al Islam Bandung - Ruang Resusitasi -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-alislam-resusitasi-img"
+                        class="canva-image w-full h-40 object-contain p-4" loading="lazy" src="img/client_alislam.png"
+                        alt="RS Al Islam Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-alislam-resusitasi-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Al Islam Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Resusitasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2022 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RS Ibu dan Anak Al Islam Bandung - Ruang Isolasi -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-alislam-rsia-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_rsia_alislam.png" alt="RS Ibu dan Anak Al Islam Bandung Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-alislam-rsia-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RS Ibu dan Anak Al Islam Bandung</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Isolasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2022 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- Pertamina Jakarta - Laboratorium Uji Baterai -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-pertamina-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_pertamina.png" alt="Pertamina Jakarta Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-pertamina-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            Pertamina Jakarta</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium Uji Baterai</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2023 · Jakarta</p>
+                    </div>
+                </div>
+
+                <!-- PT. Indofood Purwakarta -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="food"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-indofood-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_indofood.png" alt="PT. Indofood Sukses Makmur Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Food &amp; Beverage</span>
+                        <h4 data-template-id="proj-indofood-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT. Indofood Sukses Makmur</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC </p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2023 · Purwakarta</p>
+                    </div>
+                </div>
+
+                <!-- PT Papandayan Cocoa Indonesia -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="food"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-papandayan-lab-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_barrycallebaut.png" alt="PT Papandayan Cocoa Indonesia Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Food &amp; Beverage</span>
+                        <h4 data-template-id="proj-papandayan-lab-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Papandayan Cocoa Indonesia</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2023 · Bandung</p>
+                    </div>
+                </div>
+
+                <!-- RSUD Bangli Bali -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-bangli-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_bangli.png" alt="RSUD Bangli Bali Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-bangli-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSUD Bangli Bali</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Steril Ruang Operasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2023 · Bali</p>
+                    </div>
+                </div>
+
+                <!--  RSUD LAMPUNG  -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-rsudam-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_rsudam.png" alt="RSUD Dr. H. Abdul Moeloek Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-rsudam-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSUD LAMPUNG </h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Isolasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2024 · Lampung</p>
+                    </div>
+                </div>
+
+                <!-- Pertamina Plumpang Jakarta -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-pertamina-plumpang-img"
+                        class="canva-image w-full h-40 object-contain p-4" loading="lazy" src="img/client_pertamina.png"
+                        alt="Pertamina Plumpang Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-pertamina-plumpang-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            Pertamina Plumpang</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium Uji Oli</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2025 · Jakarta</p>
+                    </div>
+                </div>
+
+                <!-- BRIN Jakarta -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-brin-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_brin.png" alt="BRIN Jakarta Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-brin-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            BRIN Jakarta</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2025 · Jakarta</p>
+                    </div>
+                </div>
+
+                <!-- JAECO Cikarang -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-jaeco-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_jaeco.png" alt="JAECO Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-jaeco-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            JAECO Cikarang</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Laboratorium Baterai Mobil</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2025 · Cikarang</p>
+                    </div>
+                </div>
+
+                <!-- RSI Solo -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="hospital"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <img data-template-id="proj-rsis-img" class="canva-image w-full h-40 object-contain p-4"
+                        loading="lazy" src="img/client_rsis.png" alt="RSI Solo Logo">
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Hospital</span>
+                        <h4 data-template-id="proj-rsis-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            RSI Solo</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Instalasi HVAC Ruang Operasi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2019 · Solo</p>
+                    </div>
+                </div>
+
+                <!-- PT. BSI Jababeka Cikarang -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <div class="w-full h-40 flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 border-b border-slate-100/50">
+                        <div class="w-16 h-16 rounded-full bg-cyan-50 flex items-center justify-center border border-cyan-100/50 shadow-sm shadow-cyan-100">
+                            <i data-lucide="factory" class="w-8 h-8" style="color: #00b4d8;"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-bsi-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT. BSI Jababeka</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Ruang Produksi</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2020 · Cikarang</p>
+                    </div>
+                </div>
+
+                <!-- PT Indi, Bali -->
+                <div class="rounded-xl overflow-hidden card-hover project-item" data-category="industrial"
+                    style="background:#fff; border:1px solid rgba(0,180,216,0.18); box-shadow:0 2px 10px rgba(0,180,216,0.07);">
+                    <div class="w-full h-40 flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 border-b border-slate-100/50">
+                        <div class="w-16 h-16 rounded-full bg-cyan-50 flex items-center justify-center border border-cyan-100/50 shadow-sm shadow-cyan-100">
+                            <i data-lucide="droplet" class="w-8 h-8" style="color: #00b4d8;"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs" style="color:#00b4d8;">Industrial &amp; Electronics</span>
+                        <h4 data-template-id="proj-indi-name" class="canva-text font-bold text-sm mt-1"
+                            style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">
+                            PT Indi Bali</h4>
+                        <p class="text-xs mt-1" style="color:#4a6280;">Cleanroom Skin Care</p>
+                        <p class="text-xs mt-1" style="color:#6b8aa8;">2025 · Bali</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Toggle Button for showing more/less projects -->
+            <div id="project-toggle-container" class="flex justify-center mt-10 hidden">
+                <button id="project-toggle-btn"
+                    class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300 hover:scale-105"
+                    style="background: #00b4d8; color: #fff; box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2);">
+                    <span id="project-toggle-text">Tampilkan Lebih Banyak</span>
+                    <i data-lucide="chevron-down" id="project-toggle-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CONTACT
+         ========================================= -->
+    <section id="contact" class="py-20 px-4" style="background:#ffffff;">
+        <div class="max-w-7xl mx-auto">
+            <h2 data-template-id="contact-title" class="canva-text font-bold text-center mb-12"
+                style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 24px;">Hubungi Kami
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Office Info -->
+                <div class="glass rounded-xl p-8"
+                    style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 12px rgba(0,180,216,0.07);">
+                    <h3 data-template-id="contact-info-title" class="canva-text font-bold mb-6"
+                        style="color: rgb(0, 180, 216); font-weight: 700; font-style: normal; font-size: 20px;">
+                        Informasi Kantor</h3>
+                    <div class="space-y-4 text-sm" style="color:#4a6280;">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <p>Graha PHRI Jawa Barat Lantai 6, Jl. Sukabumi No.42, Bandung, Jawa Barat</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
+                            <p>+62 813-9944-5688</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
+                            <p>tit@thermalinovasiteknik.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 rounded-lg overflow-hidden h-48">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9!2d107.61!3d-6.91!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnMzYuMCJTIDEwN8KwMzYnMzYuMCJF!5e0!3m2!1sen!2sid!4v1"
+                            width="100%" height="100%" style="border:0" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Office Location"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass rounded-xl p-8"
+                    style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 12px rgba(0,180,216,0.07);">
+                    <h3 data-template-id="contact-form-title" class="canva-text font-bold mb-6"
+                        style="color: rgb(0, 180, 216); font-weight: 700; font-style: normal; font-size: 20px;">
+                        Kirim Pesan</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="cf-company" class="text-xs mb-1 block" style="color:#6b8aa8;">Nama
+                                Perusahaan</label>
+                            <input id="cf-company" type="text" required
+                                class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                        </div>
+                        <div>
+                            <label for="cf-pic" class="text-xs mb-1 block" style="color:#6b8aa8;">Nama PIC</label>
+                            <input id="cf-pic" type="text" required
+                                class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="cf-email" class="text-xs mb-1 block" style="color:#6b8aa8;">Email</label>
+                                <input id="cf-email" type="email" required
+                                    class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                    style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                            </div>
+                            <div>
+                                <label for="cf-phone" class="text-xs mb-1 block" style="color:#6b8aa8;">Telepon</label>
+                                <input id="cf-phone" type="tel" required
+                                    class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                    style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="cf-industry" class="text-xs mb-1 block" style="color:#6b8aa8;">Jenis
+                                Industri</label>
+                            <select id="cf-industry" class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                                <option value="">Pilih industri</option>
+                                <option value="Hospital">Hospital</option>
+                                <option value="Pharmaceutical">Pharmaceutical</option>
+                                <option value="Food &amp; Beverage">Food &amp; Beverage</option>
+                                <option value="Data Center">Data Center</option>
+                                <option value="Laboratory">Laboratory</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cf-desc" class="text-xs mb-1 block" style="color:#6b8aa8;">Deskripsi
+                                Kebutuhan</label>
+                            <textarea id="cf-desc" rows="3"
+                                class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none resize-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;"></textarea>
+                        </div>
+                        <button type="submit" data-template-id="contact-submit-btn"
+                            class="canva-button w-full py-3 rounded-lg font-semibold btn-cta"
+                            style="background: rgb(255, 176, 0); color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">Kirim
+                            Permintaan Konsultasi</button>
+                        <div id="contact-success" class="hidden text-center text-sm py-2" style="color:#0096c7;">
+                            ✓ Permintaan konsultasi berhasil dikirim!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         REQUEST QUOTATION
+         ========================================= -->
+    <section id="quotation" class="py-20 px-4" style="background:#f0f8fc;">
+        <div class="max-w-3xl mx-auto">
+            <h2 data-template-id="quotation-title" class="canva-text font-bold text-center mb-4"
+                style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 24px;">Request
+                Quotation</h2>
+            <p data-template-id="quotation-subtitle" class="canva-text text-center text-sm mb-10"
+                style="color: rgb(74, 98, 128); font-weight: 400; font-style: normal; font-size: 16px;">Isi formulir
+                di bawah untuk mendapatkan penawaran dari tim kami.</p>
+
+            <!-- Steps Indicator -->
+            <div class="flex items-center justify-center gap-2 mb-10">
+                <div class="step-indicator step-active w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold"
+                    data-step="1">1</div>
+                <div class="w-12 h-0.5 bg-white/10"></div>
+                <div class="step-indicator step-inactive w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold"
+                    data-step="2">2</div>
+                <div class="w-12 h-0.5 bg-white/10"></div>
+                <div class="step-indicator step-inactive w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold"
+                    data-step="3">3</div>
+            </div>
+
+            <form id="quotation-form" class="rounded-xl p-8"
+                style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 16px rgba(0,180,216,0.08);">
+                <!-- Step 1: Data Perusahaan -->
+                <div id="q-step-1" class="space-y-4">
+                    <h3 class="font-bold mb-4" style="color:#00b4d8;">Data Perusahaan</h3>
+                    <div>
+                        <label for="q-company" class="text-xs mb-1 block" style="color:#6b8aa8;">Nama Perusahaan</label>
+                        <input id="q-company" type="text" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <div>
+                        <label for="q-pic" class="text-xs mb-1 block" style="color:#6b8aa8;">PIC</label>
+                        <input id="q-pic" type="text" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <div>
+                        <label for="q-email" class="text-xs mb-1 block" style="color:#6b8aa8;">Email</label>
+                        <input id="q-email" type="email" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <div>
+                        <label for="q-phone" class="text-xs mb-1 block" style="color:#6b8aa8;">Nomor Telepon</label>
+                        <input id="q-phone" type="tel" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <button type="button" onclick="nextStep(2)" class="w-full py-3 rounded-lg font-semibold btn-primary"
+                        style="background:#00b4d8; color:#fff;">Selanjutnya →</button>
+                </div>
+
+                <!-- Step 2: Pilih Kebutuhan -->
+                <div id="q-step-2" class="hidden space-y-4">
+                    <h3 class="font-bold mb-4" style="color:#00b4d8;">Pilih Kebutuhan</h3>
+                    <div>
+                        <label class="text-xs mb-2 block" style="color:#6b8aa8;">Sektor</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Hospital MOT" class="accent-primary">
+                                Hospital MOT
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Pharmaceutical" class="accent-primary">
+                                Pharmaceutical
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Food &amp; Beverage" class="accent-primary">
+                                Food &amp; Beverage
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Data Center" class="accent-primary"> Data
+                                Center
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs mb-2 block" style="color:#6b8aa8;">Material</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="EPS Sandwich Panel"
+                                    class="accent-primary"> EPS Sandwich Panel
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="PIR Sandwich Panel"
+                                    class="accent-primary"> PIR Sandwich Panel
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="Vinyl Flooring" class="accent-primary">
+                                Vinyl Flooring
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="Epoxy Flooring" class="accent-primary">
+                                Epoxy Flooring
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs mb-2 block" style="color:#6b8aa8;">Komponen HVAC</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="hvac" value="HEPA Filter" class="accent-primary"> HEPA
+                                Filter
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="hvac" value="Ducting" class="accent-primary"> Ducting
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="hvac" value="Automation Controller" class="accent-primary">
+                                Automation Controller
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <button type="button" onclick="nextStep(1)" class="flex-1 py-3 rounded-lg font-semibold"
+                            style="border:1px solid rgba(0,180,216,0.3); color:#4a6280; background:#f0f8fc;">←
+                            Kembali</button>
+                        <button type="button" onclick="nextStep(3)"
+                            class="flex-1 py-3 rounded-lg font-semibold btn-primary"
+                            style="background:#00b4d8; color:#fff;">Selanjutnya →</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Upload Dokumen -->
+                <div id="q-step-3" class="hidden space-y-4">
+                    <h3 class="font-bold mb-4" style="color:#00b4d8;">Upload Dokumen (Opsional)</h3>
+                    <p class="text-xs" style="color:#6b8aa8;">Upload BOQ, Drawing, TOR, PDF, atau Excel. (Fitur upload
+                        tersedia
+                        melalui email setelah submit.)</p>
+                    <div class="rounded-xl p-8 text-center"
+                        style="border:2px dashed rgba(0,180,216,0.3); background:#f7fbfd;">
+                        <i data-lucide="upload-cloud" class="w-10 h-10 text-primary mx-auto mb-2"></i>
+                        <p class="text-sm" style="color:#6b8aa8;">Kirim dokumen ke email kami setelah submit form ini
+                        </p>
+                        <p class="text-xs mt-1" style="color:#9ab5c8;">tit@thermalinovasiteknik.com</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button type="button" onclick="nextStep(2)" class="flex-1 py-3 rounded-lg font-semibold"
+                            style="border:1px solid rgba(0,180,216,0.3); color:#4a6280; background:#f0f8fc;">←
+                            Kembali</button>
+                        <button type="submit" id="q-submit-btn" class="flex-1 py-3 rounded-lg font-semibold btn-cta"
+                            style="background:#FFB000; color:#1a2332;">Kirim Request Penawaran</button>
+                    </div>
+                </div>
+
+                <!-- Success State -->
+                <div id="q-success" class="hidden text-center py-8">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+                        style="background:rgba(0,180,216,0.12);">
+                        <i data-lucide="check" class="w-8 h-8" style="color:#0096c7;"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2" style="color:#0096c7;">Request Terkirim!</h3>
+                    <p class="text-sm" style="color:#6b8aa8;">Tim kami akan menghubungi Anda dalam 1x24 jam.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer data-template-id="footer-section" class="canva-footer py-12 px-4"
+        style="background: #e8f4f8; border-top:1px solid rgba(0,180,216,0.2);">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <div class="flex items-center gap-2.5 mb-4">
+                    <img src="img/logo_mark.png?v=2" alt="PT. Thermal Inovasi Teknik Logo" class="h-8 w-auto object-contain">
+                    <img src="img/logo_text.png?v=1" alt="PT. Thermal Inovasi Teknik" class="h-4.5 w-auto object-contain">
+                </div>
+                <p class="text-xs leading-relaxed" style="color:#6b8aa8;">Solusi HVAC, Cleanroom, Mechanical Electrical
+                    &amp;
+                    Flooring untuk industri Indonesia.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3" style="color:#00b4d8;">Sitemap</h4>
+                <div class="space-y-1 text-xs" style="color:#6b8aa8;">
+                    <a href="#home" class="block hover:text-primary">Home</a>
+                    <a href="#about" class="block hover:text-primary">About Us</a>
+                    <a href="#services" class="block hover:text-primary">Services</a>
+                    <a href="#projects" class="block hover:text-primary">Projects</a>
+                    <a href="#contact" class="block hover:text-primary">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3" style="color:#00b4d8;">Contact</h4>
+                <p class="text-xs" style="color:#6b8aa8;">+62 813-9944-5688</p>
+                <p class="text-xs" style="color:#6b8aa8;">tit@thermalinovasiteknik.com</p>
+                <div class="flex gap-3 mt-3">
+                    <i data-lucide="linkedin" class="w-4 h-4 cursor-pointer hover:text-primary"
+                        style="color:#9ab5c8;"></i>
+                    <i data-lucide="instagram" class="w-4 h-4 cursor-pointer hover:text-primary"
+                        style="color:#9ab5c8;"></i>
+                    <i data-lucide="mail" class="w-4 h-4 cursor-pointer hover:text-primary" style="color:#9ab5c8;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-8 pt-6 text-center" style="border-top:1px solid rgba(0,180,216,0.15);">
+            <p data-template-id="footer-copyright" class="canva-text text-xs"
+                style="color: rgb(107, 138, 168); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 PT
+                Thermal Inovasi Teknik. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =========================================
+         SCRIPTS
+         ========================================= -->
+    <script src="/_sdk/editing_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js"></script>
+    <script src="js/main.js?v=20"></script>
+
+</body>
+
+</html>

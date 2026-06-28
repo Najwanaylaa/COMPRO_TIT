@@ -1,0 +1,136 @@
+/* =============================================
+   PT Thermal Inovasi Teknik - Main Stylesheet
+   ============================================= */
+
+html {
+    scroll-padding-top: 64px;
+}
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ---------- Glassmorphism ---------- */
+.glass {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 180, 216, 0.22);
+}
+
+/* ---------- Glow Effects ---------- */
+.glow {
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.15);
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(0, 180, 216, 0.4);
+}
+
+.glow-text-primary {
+    text-shadow: 0 0 12px rgba(0, 180, 216, 0.6), 0 0 4px rgba(0, 180, 216, 0.3);
+}
+
+.glow-text-accent {
+    text-shadow: 0 0 12px rgba(0, 150, 199, 0.6), 0 0 4px rgba(0, 150, 199, 0.3);
+}
+
+.glow-text-cta {
+    text-shadow: 0 0 12px rgba(255, 176, 0, 0.6), 0 0 4px rgba(255, 176, 0, 0.3);
+}
+
+/* ---------- Buttons ---------- */
+.btn-cta {
+    transition: all 0.3s;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255, 176, 0, 0.4);
+}
+
+.btn-primary {
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 180, 216, 0.4);
+}
+
+/* ---------- Card Hover ---------- */
+.card-hover {
+    transition: all 0.3s;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 30px rgba(0, 180, 216, 0.18) !important;
+    border-color: rgba(0, 180, 216, 0.45) !important;
+}
+
+/* ---------- Fade-in Animation ---------- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- Navigation Links ---------- */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00b4d8;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ---------- Step Indicators ---------- */
+.step-active {
+    background: #00b4d8;
+    color: #fff;
+}
+
+.step-inactive {
+    background: rgba(0, 180, 216, 0.12);
+    color: #00b4d8;
+}
+
+/* ---------- Custom Scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e8f4f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #90cfe8;
+    border-radius: 4px;
+}
+
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 12s linear infinite;
+}
