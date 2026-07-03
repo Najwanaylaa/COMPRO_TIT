@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <script src="/_sdk/telemetry_sdk.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PT Thermal Inovasi Teknik</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00b4d8',
+                        secondary: '#e8f4f8',
+                        accent: '#0096c7',
+                        bg: '#f0f8fc',
+                        cta: '#FFB000'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+</head>
+
+<body data-template-id="__page-root" class="min-h-screen overflow-x-hidden"
+    style="background: #f0f8fc; color: #1a2332;">
+
+    <!-- =========================================
+         NAVIGATION
+         ========================================= -->
+    <nav class="fixed top-0 left-0 right-0 z-50"
+        style="background:#ffffff; border-bottom:1px solid rgba(0,180,216,0.2); box-shadow: 0 2px 12px rgba(0,180,216,0.08);">
+        <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="img/logo_mark.png?v=2" alt="PT. Thermal Inovasi Teknik Logo"
+                    class="h-9 w-auto object-contain">
+                <img src="img/logo_text.png?v=1" alt="PT. Thermal Inovasi Teknik" class="h-5 w-auto object-contain">
+            </a>
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-7 text-sm">
+                <a href="index.html" class="nav-link hover:text-primary" style="color:#4a6280;">Home</a>
+                <a href="about.html" class="nav-link hover:text-primary" style="color:#4a6280;">About Us</a>
+                <a href="services.html" class="nav-link hover:text-primary" style="color:#4a6280;">Services</a>
+                <a href="projects.html" class="nav-link hover:text-primary" style="color:#4a6280;">Projects</a>
+                <a href="contact.html" class="nav-link font-semibold" style="color:#00b4d8;">Contact</a>
+                <a href="quotation.html" class="btn-cta px-4 py-2 rounded-lg font-bold text-xs uppercase"
+                    style="background: linear-gradient(135deg, #FFB000 0%, #E09E00 100%); color: #1a2332; box-shadow: 0 2px 8px rgba(255,176,0,0.3);">
+                    GET ESTIMATE
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 text-sm" style="background:#fff;">
+            <a href="index.html" class="block py-2" style="color:#4a6280;">Home</a>
+            <a href="about.html" class="block py-2" style="color:#4a6280;">About Us</a>
+            <a href="services.html" class="block py-2" style="color:#4a6280;">Services</a>
+            <a href="projects.html" class="block py-2" style="color:#4a6280;">Projects</a>
+            <a href="contact.html" class="block py-2 font-semibold" style="color:#00b4d8;">Contact</a>
+            <a href="quotation.html" class="block py-2 text-cta font-semibold">Request Quotation</a>
+        </div>
+    </nav>
+
+    <!-- =========================================
+         CONTACT CONTENT
+         ========================================= -->
+    <section id="contact" class="relative pt-24 pb-12 px-4" style="background:#f0f8fc;">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-2 text-xs mb-8" style="color:#6b8aa8;">
+                <a href="index.html" class="hover:text-primary" style="color:#6b8aa8;">Home</a>
+                <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                <span style="color:#1a2332; font-weight:600;">Contact</span>
+            </div>
+
+            <h2 data-template-id="contact-title" class="canva-text font-bold text-center mb-12"
+                style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 24px;">Hubungi Kami</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Office Info -->
+                <div class="glass rounded-xl p-8"
+                    style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 12px rgba(0,180,216,0.07);">
+                    <h3 data-template-id="contact-info-title" class="canva-text font-bold mb-6"
+                        style="color: rgb(0, 180, 216); font-weight: 700; font-style: normal; font-size: 20px;">
+                        Informasi Kantor</h3>
+                    <div class="space-y-4 text-sm" style="color:#4a6280;">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+                            <p>Graha PHRI Jawa Barat Lantai 6, Jl. Sukabumi No.42, Bandung, Jawa Barat</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
+                            <p>+62 813-9944-5688</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
+                            <p>tit@thermalinovasiteknik.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 rounded-lg overflow-hidden h-48">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9!2d107.61!3d-6.91!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnMzYuMCJTIDEwN8KwMzYnMzYuMCJF!5e0!3m2!1sen!2sid!4v1"
+                            width="100%" height="100%" style="border:0" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Office Location"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass rounded-xl p-8"
+                    style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 12px rgba(0,180,216,0.07);">
+                    <h3 data-template-id="contact-form-title" class="canva-text font-bold mb-6"
+                        style="color: rgb(0, 180, 216); font-weight: 700; font-style: normal; font-size: 20px;">
+                        Kirim Pesan</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="cf-company" class="text-xs mb-1 block" style="color:#6b8aa8;">Nama Perusahaan</label>
+                            <input id="cf-company" type="text" required
+                                class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                        </div>
+                        <div>
+                            <label for="cf-pic" class="text-xs mb-1 block" style="color:#6b8aa8;">Nama PIC</label>
+                            <input id="cf-pic" type="text" required
+                                class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="cf-email" class="text-xs mb-1 block" style="color:#6b8aa8;">Email</label>
+                                <input id="cf-email" type="email" required
+                                    class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                    style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                            </div>
+                            <div>
+                                <label for="cf-phone" class="text-xs mb-1 block" style="color:#6b8aa8;">Telepon</label>
+                                <input id="cf-phone" type="tel" required
+                                    class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                    style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="cf-industry" class="text-xs mb-1 block" style="color:#6b8aa8;">Jenis Industri</label>
+                            <select id="cf-industry" class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                                <option value="">Pilih industri</option>
+                                <option value="Hospital">Hospital</option>
+                                <option value="Pharmaceutical">Pharmaceutical</option>
+                                <option value="Food &amp; Beverage">Food &amp; Beverage</option>
+                                <option value="Data Center">Data Center</option>
+                                <option value="Laboratory">Laboratory</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cf-desc" class="text-xs mb-1 block" style="color:#6b8aa8;">Deskripsi Kebutuhan</label>
+                            <textarea id="cf-desc" rows="3"
+                                class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none resize-none"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;"></textarea>
+                        </div>
+                        <button type="submit" data-template-id="contact-submit-btn"
+                            class="canva-button w-full py-3 rounded-lg font-semibold btn-cta"
+                            style="background: rgb(255, 176, 0); color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 16px;">Kirim Permintaan Konsultasi</button>
+                        <div id="contact-success" class="hidden text-center text-sm py-2" style="color:#0096c7;">
+                            ✓ Permintaan konsultasi berhasil dikirim!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer data-template-id="footer-section" class="canva-footer py-12 px-4"
+        style="background: #e8f4f8; border-top:1px solid rgba(0,180,216,0.2);">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <div class="flex items-center gap-2.5 mb-4">
+                    <img src="img/logo_mark.png?v=2" alt="PT. Thermal Inovasi Teknik Logo"
+                        class="h-8 w-auto object-contain">
+                    <img src="img/logo_text.png?v=1" alt="PT. Thermal Inovasi Teknik"
+                        class="h-4.5 w-auto object-contain">
+                </div>
+                <p class="text-xs leading-relaxed" style="color:#6b8aa8;">Solusi HVAC, Cleanroom, Mechanical Electrical &amp; Flooring untuk industri Indonesia.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3" style="color:#00b4d8;">Sitemap</h4>
+                <div class="space-y-1 text-xs" style="color:#6b8aa8;">
+                    <a href="index.html" class="block hover:text-primary">Home</a>
+                    <a href="about.html" class="block hover:text-primary">About Us</a>
+                    <a href="services.html" class="block hover:text-primary">Services</a>
+                    <a href="projects.html" class="block hover:text-primary">Projects</a>
+                    <a href="contact.html" class="block hover:text-primary">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3" style="color:#00b4d8;">Contact</h4>
+                <p class="text-xs" style="color:#6b8aa8;">+62 813-9944-5688</p>
+                <p class="text-xs" style="color:#6b8aa8;">tit@thermalinovasiteknik.com</p>
+                <div class="flex gap-3 mt-3">
+                    <i data-lucide="linkedin" class="w-4 h-4 cursor-pointer hover:text-primary"
+                        style="color:#9ab5c8;"></i>
+                    <i data-lucide="instagram" class="w-4 h-4 cursor-pointer hover:text-primary"
+                        style="color:#9ab5c8;"></i>
+                    <i data-lucide="mail" class="w-4 h-4 cursor-pointer hover:text-primary" style="color:#9ab5c8;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-8 pt-6 text-center" style="border-top:1px solid rgba(0,180,216,0.15);">
+            <p data-template-id="footer-copyright" class="canva-text text-xs"
+                style="color: rgb(107, 138, 168); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 PT Thermal Inovasi Teknik. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =========================================
+         SCRIPTS
+         ========================================= -->
+    <script src="/_sdk/editing_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js"></script>
+    <script src="js/main.js?v=20"></script>
+
+</body>
+
+</html>

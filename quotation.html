@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <script src="/_sdk/telemetry_sdk.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Quotation - PT Thermal Inovasi Teknik</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00b4d8',
+                        secondary: '#e8f4f8',
+                        accent: '#0096c7',
+                        bg: '#f0f8fc',
+                        cta: '#FFB000'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+</head>
+
+<body data-template-id="__page-root" class="min-h-screen overflow-x-hidden"
+    style="background: #f0f8fc; color: #1a2332;">
+
+    <!-- =========================================
+         NAVIGATION
+         ========================================= -->
+    <nav class="fixed top-0 left-0 right-0 z-50"
+        style="background:#ffffff; border-bottom:1px solid rgba(0,180,216,0.2); box-shadow: 0 2px 12px rgba(0,180,216,0.08);">
+        <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="img/logo_mark.png?v=2" alt="PT. Thermal Inovasi Teknik Logo"
+                    class="h-9 w-auto object-contain">
+                <img src="img/logo_text.png?v=1" alt="PT. Thermal Inovasi Teknik" class="h-5 w-auto object-contain">
+            </a>
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-7 text-sm">
+                <a href="index.html" class="nav-link hover:text-primary" style="color:#4a6280;">Home</a>
+                <a href="about.html" class="nav-link hover:text-primary" style="color:#4a6280;">About Us</a>
+                <a href="services.html" class="nav-link hover:text-primary" style="color:#4a6280;">Services</a>
+                <a href="projects.html" class="nav-link hover:text-primary" style="color:#4a6280;">Projects</a>
+                <a href="contact.html" class="nav-link hover:text-primary" style="color:#4a6280;">Contact</a>
+                <a href="quotation.html" class="btn-cta px-4 py-2 rounded-lg font-bold text-xs uppercase"
+                    style="background: linear-gradient(135deg, #FFB000 0%, #E09E00 100%); color: #1a2332; box-shadow: 0 2px 8px rgba(255,176,0,0.3);">
+                    GET ESTIMATE
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 text-sm" style="background:#fff;">
+            <a href="index.html" class="block py-2" style="color:#4a6280;">Home</a>
+            <a href="about.html" class="block py-2" style="color:#4a6280;">About Us</a>
+            <a href="services.html" class="block py-2" style="color:#4a6280;">Services</a>
+            <a href="projects.html" class="block py-2" style="color:#4a6280;">Projects</a>
+            <a href="contact.html" class="block py-2" style="color:#4a6280;">Contact</a>
+            <a href="quotation.html" class="block py-2 text-cta font-semibold" style="color:#00b4d8;">Request Quotation</a>
+        </div>
+    </nav>
+
+    <!-- =========================================
+         REQUEST QUOTATION CONTENT
+         ========================================= -->
+    <section id="quotation" class="relative pt-24 pb-12 px-4" style="background:#f0f8fc;">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-2 text-xs mb-8" style="color:#6b8aa8;">
+                <a href="index.html" class="hover:text-primary" style="color:#6b8aa8;">Home</a>
+                <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                <span style="color:#1a2332; font-weight:600;">Request Quotation</span>
+            </div>
+
+            <h2 data-template-id="quotation-title" class="canva-text font-bold text-center mb-4"
+                style="color: rgb(26, 35, 50); font-weight: 700; font-style: normal; font-size: 24px;">Request Quotation</h2>
+            <p data-template-id="quotation-subtitle" class="canva-text text-center text-sm mb-10"
+                style="color: rgb(74, 98, 128); font-weight: 400; font-style: normal; font-size: 16px;">Isi formulir di bawah untuk mendapatkan penawaran dari tim kami.</p>
+
+            <!-- Steps Indicator -->
+            <div class="flex items-center justify-center gap-2 mb-10">
+                <div class="step-indicator step-active w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold animate-none"
+                    data-step="1">1</div>
+                <div class="w-12 h-0.5 bg-gray-300"></div>
+                <div class="step-indicator step-inactive w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold animate-none"
+                    data-step="2">2</div>
+                <div class="w-12 h-0.5 bg-gray-300"></div>
+                <div class="step-indicator step-inactive w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold animate-none"
+                    data-step="3">3</div>
+            </div>
+
+            <form id="quotation-form" class="rounded-xl p-8"
+                style="background:#ffffff; border:1px solid rgba(0,180,216,0.2); box-shadow:0 2px 16px rgba(0,180,216,0.08);">
+                <!-- Step 1: Data Perusahaan -->
+                <div id="q-step-1" class="space-y-4">
+                    <h3 class="font-bold mb-4" style="color:#00b4d8;">Data Perusahaan</h3>
+                    <div>
+                        <label for="q-company" class="text-xs mb-1 block" style="color:#6b8aa8;">Nama Perusahaan</label>
+                        <input id="q-company" type="text" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <div>
+                        <label for="q-pic" class="text-xs mb-1 block" style="color:#6b8aa8;">PIC</label>
+                        <input id="q-pic" type="text" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <div>
+                        <label for="q-email" class="text-xs mb-1 block" style="color:#6b8aa8;">Email</label>
+                        <input id="q-email" type="email" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <div>
+                        <label for="q-phone" class="text-xs mb-1 block" style="color:#6b8aa8;">Nomor Telepon</label>
+                        <input id="q-phone" type="tel" required
+                            class="w-full px-4 py-2.5 rounded-lg text-sm focus:outline-none"
+                            style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.3); color:#1a2332;">
+                    </div>
+                    <button type="button" onclick="nextStep(2)" class="w-full py-3 rounded-lg font-semibold btn-primary"
+                        style="background:#00b4d8; color:#fff;">Selanjutnya →</button>
+                </div>
+
+                <!-- Step 2: Pilih Kebutuhan -->
+                <div id="q-step-2" class="hidden space-y-4">
+                    <h3 class="font-bold mb-4" style="color:#00b4d8;">Pilih Kebutuhan</h3>
+                    <div>
+                        <label class="text-xs mb-2 block" style="color:#6b8aa8;">Sektor</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Hospital MOT" class="accent-primary"> Hospital MOT
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Pharmaceutical" class="accent-primary"> Pharmaceutical
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Food &amp; Beverage" class="accent-primary"> Food &amp; Beverage
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="sector" value="Data Center" class="accent-primary"> Data Center
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs mb-2 block" style="color:#6b8aa8;">Material</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="EPS Sandwich Panel"
+                                    class="accent-primary"> EPS Sandwich Panel
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="PIR Sandwich Panel"
+                                    class="accent-primary"> PIR Sandwich Panel
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="Vinyl Flooring" class="accent-primary"> Vinyl Flooring
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="material" value="Epoxy Flooring" class="accent-primary"> Epoxy Flooring
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs mb-2 block" style="color:#6b8aa8;">Komponen HVAC</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="hvac" value="HEPA Filter" class="accent-primary"> HEPA Filter
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="hvac" value="Ducting" class="accent-primary"> Ducting
+                            </label>
+                            <label class="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer text-sm"
+                                style="background:#f0f8fc; border:1px solid rgba(0,180,216,0.25); color:#4a6280;">
+                                <input type="checkbox" name="hvac" value="Automation Controller" class="accent-primary"> Automation Controller
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <button type="button" onclick="nextStep(1)" class="flex-1 py-3 rounded-lg font-semibold"
+                            style="border:1px solid rgba(0,180,216,0.3); color:#4a6280; background:#f0f8fc;">← Kembali</button>
+                        <button type="button" onclick="nextStep(3)"
+                            class="flex-1 py-3 rounded-lg font-semibold btn-primary"
+                            style="background:#00b4d8; color:#fff;">Selanjutnya →</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Upload Dokumen -->
+                <div id="q-step-3" class="hidden space-y-4">
+                    <h3 class="font-bold mb-4" style="color:#00b4d8;">Upload Dokumen (Opsional)</h3>
+                    <p class="text-xs" style="color:#6b8aa8;">Upload BOQ, Drawing, TOR, PDF, atau Excel. (Fitur upload tersedia melalui email setelah submit.)</p>
+                    <div class="rounded-xl p-8 text-center"
+                        style="border:2px dashed rgba(0,180,216,0.3); background:#f7fbfd;">
+                        <i data-lucide="upload-cloud" class="w-10 h-10 text-primary mx-auto mb-2"></i>
+                        <p class="text-sm" style="color:#6b8aa8;">Kirim dokumen ke email kami setelah submit form ini</p>
+                        <p class="text-xs mt-1" style="color:#9ab5c8;">tit@thermalinovasiteknik.com</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button type="button" onclick="nextStep(2)" class="flex-1 py-3 rounded-lg font-semibold"
+                            style="border:1px solid rgba(0,180,216,0.3); color:#4a6280; background:#f0f8fc;">← Kembali</button>
+                        <button type="submit" id="q-submit-btn" class="flex-1 py-3 rounded-lg font-semibold btn-cta"
+                            style="background:#FFB000; color:#1a2332;">Kirim Request Penawaran</button>
+                    </div>
+                </div>
+
+                <!-- Success State -->
+                <div id="q-success" class="hidden text-center py-8">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+                        style="background:rgba(0,180,216,0.12);">
+                        <i data-lucide="check" class="w-8 h-8" style="color:#0096c7;"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2" style="color:#0096c7;">Request Terkirim!</h3>
+                    <p class="text-sm" style="color:#6b8aa8;">Tim kami akan menghubungi Anda dalam 1x24 jam.</p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer data-template-id="footer-section" class="canva-footer py-12 px-4"
+        style="background: #e8f4f8; border-top:1px solid rgba(0,180,216,0.2);">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <div class="flex items-center gap-2.5 mb-4">
+                    <img src="img/logo_mark.png?v=2" alt="PT. Thermal Inovasi Teknik Logo"
+                        class="h-8 w-auto object-contain">
+                    <img src="img/logo_text.png?v=1" alt="PT. Thermal Inovasi Teknik"
+                        class="h-4.5 w-auto object-contain">
+                </div>
+                <p class="text-xs leading-relaxed" style="color:#6b8aa8;">Solusi HVAC, Cleanroom, Mechanical Electrical &amp; Flooring untuk industri Indonesia.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3" style="color:#00b4d8;">Sitemap</h4>
+                <div class="space-y-1 text-xs" style="color:#6b8aa8;">
+                    <a href="index.html" class="block hover:text-primary">Home</a>
+                    <a href="about.html" class="block hover:text-primary">About Us</a>
+                    <a href="services.html" class="block hover:text-primary">Services</a>
+                    <a href="projects.html" class="block hover:text-primary">Projects</a>
+                    <a href="contact.html" class="block hover:text-primary">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3" style="color:#00b4d8;">Contact</h4>
+                <p class="text-xs" style="color:#6b8aa8;">+62 813-9944-5688</p>
+                <p class="text-xs" style="color:#6b8aa8;">tit@thermalinovasiteknik.com</p>
+                <div class="flex gap-3 mt-3">
+                    <i data-lucide="linkedin" class="w-4 h-4 cursor-pointer hover:text-primary"
+                        style="color:#9ab5c8;"></i>
+                    <i data-lucide="instagram" class="w-4 h-4 cursor-pointer hover:text-primary"
+                        style="color:#9ab5c8;"></i>
+                    <i data-lucide="mail" class="w-4 h-4 cursor-pointer hover:text-primary" style="color:#9ab5c8;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-8 pt-6 text-center" style="border-top:1px solid rgba(0,180,216,0.15);">
+            <p data-template-id="footer-copyright" class="canva-text text-xs"
+                style="color: rgb(107, 138, 168); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 PT Thermal Inovasi Teknik. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =========================================
+         SCRIPTS
+         ========================================= -->
+    <script src="/_sdk/editing_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js"></script>
+    <script src="js/main.js?v=20"></script>
+
+</body>
+
+</html>
