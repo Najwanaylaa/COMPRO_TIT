@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thermalinovasiteknik.eu.org/sitemap.xml
+Sitemap: https://thermal-inovasi.vercel.app/sitemap.xml
